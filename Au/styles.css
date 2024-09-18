@@ -1,0 +1,155 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Cabeçalho principal */
+header {
+    background-color: #1fcc3c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Seção de filmes favoritos */
+.favorite-movies {
+    background-color: #e3f2fd;
+    padding: 20px;
+}
+
+.favorite-movies h2 {
+    color: #1976d2;
+}
+
+.favorite-movies ul {
+    list-style-type: none;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1em;
+}
+
+.favorite-movies li {
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #020202;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Tabela */
+.movies-table {
+    padding: 20px;
+}
+
+.movies-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.movies-table th, .movies-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.movies-table th {
+    background-color: #1976d2;
+    color: white;
+    text-align: left;
+}
+
+/* Formulário */
+.form-section {
+    background-color: #ffeb3b;
+    padding: 20px;
+}
+
+.form-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-section label {
+    margin-bottom: 5px;
+}
+
+.form-section input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-section button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-section button:hover {
+    background-color: #45a049;
+}
+
+/* Imagem */
+.image-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Link externo */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+footer a {
+    color: #ffeb3b;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Flexbox */
+.favorite-movies, .movies-table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .movies-table table, .form-section form {
+        width: 100%;
+    }
+}
